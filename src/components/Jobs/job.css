@@ -1,0 +1,214 @@
+.job{
+          background-color: #ededed;
+}
+
+.job-header{
+          margin-top:2rem;
+          display:flex;
+          padding: 2rem;
+          justify-content: center;
+}
+
+.job-header h2{
+          font-size: 2.8rem;
+          font-weight: 600;
+          background: linear-gradient(90deg, #08182b 0%, #123054 38.02%, #5C24FF 75.83%, #0e0f46 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; 
+          font-family:  'Poppins', sans-serif;
+}
+
+.tag3{
+          background-color: #EEEEFA;
+          max-width: 100px;
+          padding: 0.5rem;
+          border-radius: 12px;
+          font-weight: 600;
+          margin: 1rem;
+          margin: auto;
+}
+
+.btn-job{
+          padding: 1rem;
+          border-radius: 24px;
+          border: none;
+          background-color: #6262DB;
+          color: #ffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          max-height: 200px;
+}
+
+.job-section{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap:10px;
+          padding: 1rem;
+}
+
+.job-card {
+          width: 220px;
+          height: 204px;
+          background-color:#fff;
+          padding: .4em;
+          border-radius: 12px;
+          box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.1), 4px 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.job-heading {
+          font-weight: 600;
+          color: #222;
+          padding: 5px;
+          font-size: 1.2rem;
+}
+        
+.job-heading:hover {
+          cursor: pointer;
+}
+
+
+.job-author{
+          color: #504e4e;
+          font-weight: 500;
+          font-size: 12px;
+          font-family: "Euclid Circular A", "Poppins";
+}
+
+.icons{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #0e0f46;
+}
+
+.icon-tag{
+          background-color: #EEEEFA;
+          max-width: 52px;
+          padding: 0.5rem;
+          border-radius: 12px;
+          font-weight: 600;
+          margin: 1rem;
+          cursor: pointer;
+          font-size: 0.7rem;
+}
+
+.search{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+
+.input-container {
+          position: relative;
+          height: 2.8rem;
+          width: 100%;
+          min-width: 200px;
+          max-width: 250px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+        
+.input-container input {
+          height: 100%;
+          width: 100%;
+          border-radius: 8px;
+          border: 1px solid  rgb(176 190 197);
+          background-color: transparent;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          font-weight: 400;
+          color: rgb(69 90 100);
+          outline: none;
+          transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+        
+.input-container input:focus {
+          border: 1px solid rgb(236 72 153 );
+}
+        
+.invite-btn {
+          position: absolute;
+          width: 65px;
+          right: 4px;
+          top: 4px;
+          bottom: 4px;
+          z-index: 10;
+          border-radius: 4px;
+          background-color: rgb(236 72 153 );
+          color: #fff;
+          padding-top: .25rem;
+          padding-bottom: .25rem;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          text-align: center;
+          vertical-align: middle;
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          border: none;
+          transition: .6s ease;
+}
+        
+.invite-btn:hover {
+          right: 2px;
+          top: 2px;
+          bottom: 2px;
+          border-radius: 8px;
+}
+        
+.input-container input:placeholder-shown ~ .invite-btn {
+          pointer-events: none;
+          background-color: rgb(22, 22, 22);
+          opacity: 0.5;
+}
+
+@media screen and (max-width:640px){
+          .job-section{
+                    padding: 0.5rem;
+          }
+}
+
+@media screen and (max-width:440px){
+          .job-header h2{
+                    font-size: 1.5rem;
+          }
+
+          .job-card{
+                    width: 170px;
+                    height: 190px;
+          }
+
+          .icons{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background-color: #0e0f46;
+          }
+
+          .job-heading{
+                    font-size: 1rem;
+          }
+          .icon-tag{
+                    background-color: #EEEEFA;
+                    max-width: 52px;
+                    padding: 0.5rem;
+                    border-radius: 12px;
+                    font-weight: 500;
+                    margin: 1rem;
+                    cursor: pointer;
+          }
+          .job-section{
+                    padding: 0;
+                    margin-bottom: 20px;
+          }
+          
+}

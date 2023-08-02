@@ -1,0 +1,75 @@
+.mentor{
+width:100%;
+}
+
+.mentor-header{
+          font-size: 2.8rem;
+}
+
+.mentor-section{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-bottom: 20px;
+          gap: 50px;
+}
+.mentor-img{
+          background-size: cover;
+          width: 200px;
+          height: 200px;
+          border-radius: 24px;
+          margin-top: 1rem;
+
+}
+
+.mentor-card {
+          background-color: rgba(243, 244, 246, 1);
+          padding: 2rem;
+          max-width: 320px;
+          border-radius: 10px;
+          box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+}
+        
+
+        
+.stars {
+          display: flex;
+          justify-content: center;
+          grid-gap: 30px;
+          gap: 30px;
+          color: rgba(34, 197, 94, 1);
+}
+        
+.stars svg {
+          height: 1rem;
+          width: 1rem;
+}
+        
+        
+.message {
+          /* overflow: hidden; */
+          /* display: -webkit-box; */
+          -webkit-box-orient: vertical;
+          margin-top: 1rem;
+          color: rgba(107, 114, 128, 1);
+}
+
+
+@media screen and (max-width:640px){
+          .mentor .mentor-content{
+                    top: 320%;
+          }
+}
+
+@media screen and (max-width:440px){
+          .mentor .mentor-content{
+                    top: 310%;
+                    
+          }
+          .mentor-header{
+                    font-size: 1.5rem;
+          }
+}

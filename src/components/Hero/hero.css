@@ -1,0 +1,160 @@
+.hero-section {
+          width: 100%;
+          height: 629px;
+          flex-shrink: 0;
+          background: #fff;
+          display: grid;
+          grid-template-columns:repeat(1fr);
+          grid-gap:5px;
+}
+
+
+
+.left{
+          height:100%;
+          max-width:100%;
+          display:flex;
+          flex-direction: column;
+          padding: 1rem;
+          background-image: url(../../assests/sky.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          
+          
+}
+
+.tag{
+          background-color: #EEEEFA;
+          max-width: 280px;
+          padding: 0.5rem;
+          border-radius: 12px;
+          font-weight: 600;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        
+        }
+
+.content{
+          margin: auto;
+          padding: 1rem;
+}
+
+h1 {
+          font-size: 3.8rem;
+          font-weight: 600;
+          background: linear-gradient(90deg, #08182b 0%, #123054 38.02%, #5C24FF 75.83%, #0e0f46 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; 
+          font-family:  'Poppins', sans-serif;
+          margin: auto;
+          text-align: center;
+}
+
+p{
+
+          color:#8d8b8b;
+          font-size: 1rem;
+          font-weight: 600;
+          font-family:  'Poppins', sans-serif;
+          margin: auto;
+          text-align: center;
+          max-width: 600px;
+}
+
+.yellow-mark{
+          background-color: #ff0;
+}
+
+.dash-numbers{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 2rem;
+          gap: 30px;
+          color: #08182b;
+
+          
+          
+}
+
+.dash-numbers h2{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+
+.dash-numbers p{
+          color: #08182b;
+          font-weight: 500;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+}
+
+.btn-hero{
+          padding: 1rem;
+          border-radius: 24px;
+          border: none;
+          background-color: #6262DB;
+          color: #ffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          width: 200px;
+          margin-top: 1rem;
+          margin-left: 350px;
+          gap: 5px;
+
+}
+            
+.btn-hero:hover{
+          background-color:#08182b;
+          color: #fff;
+          transition: 0.3s;
+}
+
+@media screen and ( max-width:640px ){
+          .hero-section{
+                    grid-template-columns: 1fr;
+                    height: 585px;
+                    width: 100%;
+                    margin: 3rem 0;
+          }
+
+          .content{
+                    margin-top: 40px;
+          }
+
+          .dash-numbers{
+                    padding: 0;
+                    margin-top: 1rem;
+          }
+          
+
+          h1{
+                    font-size: 1.8rem;
+                    font-weight: 900;
+                    
+
+                    
+          }
+
+          p{
+                    font-size: 0.8rem;
+                    max-width: 350px;
+                    font-weight: 550;
+          }
+
+          .btn-hero{
+                    font-size: 0.8rem;
+                    margin-left: 80px;
+                    width: 150px;
+          }
+
+          
+}
